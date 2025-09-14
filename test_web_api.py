@@ -4,6 +4,11 @@ from playwright.sync_api import Playwright, expect
 
 from utils.apiBase import APIUtils
 
+# -------------------------Note------------------------
+# Scenario
+# E2E scenario covered using hybrid way with API and UI validation...
+# Make order using API and validate that order in orders page in UI
+# ------------------------------------------------------------------
 
 def test_e2e_web_api(playwright: Playwright):
     browser = playwright.chromium.launch(headless=False)
