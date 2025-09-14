@@ -17,7 +17,7 @@ def test_playwrightShortcut(page:Page):
 def test_coreLocators(page: Page):
     page.goto("https://rahulshettyacademy.com/loginpagePractise/")
     page.get_by_label("Username:").fill("rahulshettyacademy")
-    page.get_by_label("Password:").fill("learningfdgfds")
+    page.get_by_label("Password:").fill("learning")
     page.get_by_role("combobox").select_option("teach")
     # every element in a webpage can be located with CSS selector: #id, .classname, tagname
     page.locator("#terms").check()
