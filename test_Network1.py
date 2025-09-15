@@ -3,7 +3,7 @@ import time
 from playwright.sync_api import Page
 from pytest_playwright.pytest_playwright import browser
 
-# --------------------- Note ---------------
+# --------------------- Note (Test Edge Case Scenarios) ---------------
 # Sending Fake Payload Response from server to browser
 # And validating
 # -------------------------------------------
