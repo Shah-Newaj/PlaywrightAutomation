@@ -4,7 +4,7 @@ ordersPayload = {"orders":[{"country":"India","productOrderedId":"68a961719320a1
 
 # ----------------Important Notes to Test API----------------------------------------------
 # base_url="https://rahulshettyacademy.com"
-# response url="/api/ecom/order/create-order"
+# resource url="/api/ecom/order/create-order"
 # data={"userEmail":"rahulshetty@gmail.com","userPassword":"Iamking@000"}
 # Payload = {"orders":[{"country":"India","productOrderedId":"68a961719320a140fe1ca57c"}]}
 # payload means order information order id etc
