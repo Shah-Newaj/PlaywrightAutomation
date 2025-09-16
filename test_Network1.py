@@ -1,7 +1,6 @@
 import time
 
 from playwright.sync_api import Page
-from pytest_playwright.pytest_playwright import browser
 
 # --------------------- Note (Test Edge Case Scenarios) ---------------
 # Sending Fake Payload Response from server to browser
@@ -9,6 +8,7 @@ from pytest_playwright.pytest_playwright import browser
 # -------------------------------------------
 
 #-> api call from browser -> api call contact server and return back response to browser -> browser use response to generate html data
+#-> mock after we get real response from server
 
 fakePyloadCartResponse = {"message":"No Product in Cart"}
 fakePyloadOrderResponse = {"data":[],"message":"No Orders"}
