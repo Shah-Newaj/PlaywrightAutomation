@@ -1,5 +1,6 @@
 import time
 
+import pytest
 from playwright.sync_api import Page
 
 # --------------------- Note (Test Edge Case Scenarios) ---------------
@@ -18,7 +19,7 @@ def intercept_response(route):
         json = fakePyloadOrderResponse
     )
 
-
+@pytest.mark.smoke
 def test_Network_1(page: Page):
     page.goto("https://rahulshettyacademy.com/client/")
     page.route("https://rahulshettyacademy.com/api/ecom/order/get-orders-for-customer/*", intercept_response)
